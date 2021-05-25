@@ -1,0 +1,99 @@
+.container {
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+
+  img {
+    border: 5px solid white;
+    border-radius: 50%;
+  }
+  h2 {
+    color: $very-dark-desaturated-blue;
+    padding: 1rem 0;
+  }
+  h2 span {
+    color: $dark-gray;
+    font-weight: 400;
+  }
+  p {
+    font-size: 15px;
+    color: $dark-gray;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  .divider {
+    height: 1px;
+    width: 100%;
+    background-color: $dark-gray;
+    opacity: 0.3;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 2.5rem 0;
+    text-align: center;
+    font-weight: 700;
+
+    li > * {
+      display: block;
+      font-size: 15px;
+      color: $dark-gray;
+      font-weight: 200;
+      line-height: 1.6;
+    }
+  }
+}
+
+.bg-pattern-top {
+  width: 60%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -50%);
+  z-index: -99;
+
+  @media (min-width: 700px), (min-height: 700px) {
+    transform: translate(-45%, -40%);
+    width: 70%;
+  }
+  @media (min-width: 760px) and (min-height: 800px) {
+    transform: translate(-45%, -45%);
+    width: 100%;
+  }
+  @media (min-width: 1199px) and (min-height: 800px) {
+    transform: translate(-38%, -55%);
+    width: 60%;
+  }
+  @media (min-width: 1200px) {
+    transform: translate(-18%, -55%);
+    width: 58%;
+  }
+}
+
+// Background pattern
+
+.bg-pattern-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(45%, 55%);
+  width: 100%;
+  z-index: -99;
+
+  @media (min-width: 600px) {
+    transform: translate(50%, 50%);
+  }
+  @media (min-width: 700px), (min-height: 700px) {
+    transform: translate(47%, 30%);
+  }
+  @media (min-width: 900px) and (min-height: 700px) {
+    transform: translate(40%, 65%);
+  }
+  @media (min-width: 1199px) and (min-height: 800px) {
+    transform: translate(22%, 65%);
+  }
+  @media (min-width: 1200px) {
+    width: 90%;
+  }
+}
